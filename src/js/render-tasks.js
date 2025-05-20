@@ -29,5 +29,16 @@ taskList.addEventListener('click', (event) => {
 
 });
 
+buttonE1.addEventListener('click', (e) => {
+    const body = document.querySelector("body");
 
+ if (body.classList.contains("theme-dark")) {
+     body.classList.replace("theme-dark", "theme-light")
+     localStorage.setItem("theme", "theme-light");
+
+  } else {
+     body.classList.replace("theme-light", "theme-dark")
+     localStorage.setItem("theme", "theme-dark");
+  }
+})
 
